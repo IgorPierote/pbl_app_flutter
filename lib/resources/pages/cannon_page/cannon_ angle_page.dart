@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/app/controllers/home_controller.dart';
+import 'package:flutter_app/resources/pages/trajectory_page/trajectory_page.dart';
 import 'package:nylo_framework/nylo_framework.dart';
 
 class CannonAnglePage extends NyStatefulWidget {
@@ -53,6 +54,8 @@ class _CannonAnglePage extends NyState<CannonAnglePage> {
                   print(angulo);
                   print(distancia);
                   print(altura);
+                  simular(85, 4000);
+                  Navigator.pushNamed(context, TrajectoryPage.path);
                 },
                 label: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,

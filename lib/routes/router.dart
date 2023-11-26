@@ -1,6 +1,7 @@
 import 'package:flutter_app/resources/pages/cannon_page/cannon_%20angle_page.dart';
 import 'package:flutter_app/resources/pages/cannon_page/cannon_page.dart';
 import 'package:flutter_app/resources/pages/meteor_page/meteor_selection_page.dart';
+import 'package:flutter_app/resources/pages/trajectory_page/trajectory_page.dart';
 
 import '/resources/pages/home_page.dart';
 import 'package:nylo_framework/nylo_framework.dart';
@@ -27,5 +28,6 @@ appRouter() => nyRoutes((router) {
 
       router.route(CannonAnglePage.path, (context) => CannonAnglePage());
 
+      router.route(TrajectoryPage.path, (context) => TrajectoryPage());
       // router.route(NewPage.path, (context) => NewPage(), transition: PageTransitionType.fade);
     });
